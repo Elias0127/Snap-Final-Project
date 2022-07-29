@@ -5,10 +5,10 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 // Screens
-import HomeScreen from "../screens/HomeScreen";
-import Education from "../screens/Education";
-import MapTab from "../screens/MapTab";
-import Help from "../screens/Help";
+import Map1 from "../screens/Map1";
+import Map2 from "../screens/Map2";
+import Map3 from "../screens/Map3";
+import Map4 from "../screens/Map4";
 import { StatusBar } from "expo-status-bar";
 
 
@@ -50,18 +50,18 @@ export default function UserStack() {
                         }
         })}
       >
-        <Tab.Screen name="Map 1" component={MapTab} />
+        <Tab.Screen name="Map 1" component={Map1} />
         <Tab.Screen
           name="Map 2"
-          component={HomeScreen}
+          component={Map2}
         />
         <Tab.Screen
           name="Map 3"
-          component={Education}
+          component={Map3}
         />
         <Tab.Screen
           name="Map 4"
-          component={Help}
+          component={Map4}
         />
       </Tab.Navigator>
     </NavigationContainer>
